@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minerva Media | وكالة إدارة السوشيال ميديا</title>
+  <meta name="description" content="وكالة Minerva Media متخصصة في إدارة السوشيال ميديا بشكل كامل - إشراف 24/7، تحليل الصفحات، تصاميم احترافية، واستراتيجية محتوى متكاملة بأفضل أسعار السوق." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="url(#logoGrad)" stroke-width="2.5"/>
+            <path d="M12 20 L20 12 L28 20 L20 28 Z" fill="url(#logoGrad)" opacity="0.8"/>
+            <circle cx="20" cy="20" r="4" fill="white"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="40" y2="40">
+                <stop offset="0%" stop-color="#4F8EF7"/>
+                <stop offset="100%" stop-color="#A855F7"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="logo-text">Minerva <span class="logo-accent">Media</span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+        <li><a href="#services" class="nav-link">خدماتنا</a></li>
+        <li><a href="#packages" class="nav-link">الباقات</a></li>
+        <li><a href="#why-us" class="nav-link">لماذا نحن</a></li>
+        <li><a href="#clients" class="nav-link">عملاؤنا</a></li>
+        <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+      </ul>
+      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        ابدأ الآن
+      </button>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-glow glow-3"></div>
+
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>فريق من أكثر من 50 متخصص</span>
+      </div>
+      <h1 class="hero-title">
+        نحن نُدير <span class="gradient-text">حضورك الرقمي</span><br/>
+        بينما تُركّز على<br/>
+        <span class="typewriter" id="typewriter"></span>
+      </h1>
+      <p class="hero-subtitle">
+        وكالة متخصصة في إدارة السوشيال ميديا على مدار الساعة — إشراف كامل، تصاميم احترافية، تقارير دورية، واستراتيجية محتوى فعّالة. كل ذلك بأسعار أقل بكثير من السوق.
+      </p>
+      <div class="hero-ctas">
+        <button class="btn-primary" onclick="document.getElementById('packages').scrollIntoView({behavior:'smooth'})">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          شوف الباقات
+        </button>
+        <button class="btn-secondary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          اعرف أكتر
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number" data-target="50">0</div>
+          <div class="stat-plus">+</div>
+          <div class="stat-label">متخصص في الفريق</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="24">0</div>
+          <div class="stat-label">ساعة إشراف يومياً</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="3">0</div>
+          <div class="stat-label">باقات مرنة</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-plus">%</div>
+          <div class="stat-label">رضا العملاء</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Social Icons -->
+    <div class="floating-icons">
+      <div class="float-icon icon-fb" style="--delay:0s; --x:15%; --y:25%">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </div>
+      <div class="float-icon icon-ig" style="--delay:1s; --x:80%; --y:20%">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </div>
+      <div class="float-icon icon-tk" style="--delay:2s; --x:10%; --y:70%">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.35a8.16 8.16 0 0 0 4.77 1.52V7.42a4.85 4.85 0 0 1-1-.73z"/></svg>
+      </div>
+      <div class="float-icon icon-tw" style="--delay:1.5s; --x:85%; --y:65%">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services" id="services">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">خدماتنا</div>
+        <h2 class="section-title">كل ما تحتاجه في <span class="gradient-text">مكان واحد</span></h2>
+        <p class="section-subtitle">نقدم باقة متكاملة من الخدمات لتعزيز تواجدك على السوشيال ميديا وزيادة مبيعاتك</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-aos="fade-up" data-delay="0">
+          <div class="service-icon-wrap" style="--icon-color: #4F8EF7">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">إشراف كامل 24/7</h3>
+          <p class="service-desc">فريقنا يراقب صفحتك على مدار الساعة طوال أيام الأسبوع — لا تعليق يُهمل، ولا رسالة تضيع. نضمن لك تفاعل فوري ومستمر.</p>
+          <div class="service-tag">متاح على كل المنصات</div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-delay="100">
+          <div class="service-icon-wrap" style="--icon-color: #A855F7">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
+            </svg>
+          </div>
+          <h3 class="service-title">تحليل شامل للصفحة</h3>
+          <p class="service-desc">نحلل أداء صفحتك بالكامل — الجمهور، التفاعل، أوقات الذروة، أفضل أنواع المحتوى — ونقدم لك رؤى دقيقة لاتخاذ قرارات صح.</p>
+          <div class="service-tag">تحليل عميق ودقيق</div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-delay="200">
+          <div class="service-icon-wrap" style="--icon-color: #10B981">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <h3 class="service-title">تقارير دورية كل 15 يوم</h3>
+          <p class="service-desc">كل أسبوعين بتوصلك تقرير مفصّل عن كل حاجة في صفحتك — النتائج، التحسينات، الإنجازات، والخطوة الجاية.</p>
+          <div class="service-tag">تقارير شاملة ومفصلة</div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-delay="300">
+          <div class="service-icon-wrap" style="--icon-color: #F59E0B">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+            </svg>
+          </div>
+          <h3 class="service-title">10 تصاميم شهرياً</h3>
+          <p class="service-desc">تصاميم احترافية بجودة عالية تعكس هوية براندك وتجذب جمهورك — لأن الشكل الجميل هو أول خطوة للبيع.</p>
+          <div class="service-tag">تصاميم بجودة برازيلية</div>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-delay="400">
+          <div class="service-icon-wrap" style="--icon-color: #EF4444">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M9 11l3 3L22 4"/>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+            </svg>
+          </div>
+          <h3 class="service-title">استراتيجية محتوى كاملة</h3>
+          <p class="service-desc">مش بس بتنشر — بتبني! نضع لك استراتيجية محتوى شاملة تضمن نمو حقيقي ومستدام في جمهورك ومبيعاتك.</p>
+          <div class="service-tag">خطة نمو مدروسة</div>
+        </div>
+
+        <div class="service-card special-card" data-aos="fade-up" data-delay="500">
+          <div class="service-icon-wrap" style="--icon-color: #06B6D4">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <h3 class="service-title">التواصل مع المتابعين الجدد</h3>
+          <p class="service-desc">
+            <span class="special-highlight">⭐ ميزة حصرية!</span><br/>
+            فريقنا هو اللي بيبدأ الكلام مع كل متابع جديد على كل منصاتك — Facebook, Instagram, TikTok وغيره. نحول المتابعين لعملاء حقيقيين.
+          </p>
+          <div class="service-tag unique">ميزة لا يقدمها أحد!</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PACKAGES SECTION ===== -->
+  <section class="packages" id="packages">
+    <div class="packages-bg-glow"></div>
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">الباقات</div>
+        <h2 class="section-title">اختار الباقة <span class="gradient-text">المناسبة ليك</span></h2>
+        <p class="section-subtitle">تواصل معنا للحصول على سعر مخصص يناسبك</p>
+      </div>
+
+
+
+      <div class="packages-grid">
+
+        <!-- Package 1 -->
+        <div class="package-card" id="pkg1">
+          <div class="pkg-header">
+            <div class="pkg-icon">🚀</div>
+            <div class="pkg-name">باقة الأساس</div>
+            <div class="pkg-tagline">الحماية والمتابعة الكاملة</div>
+            <div class="pkg-price-wrap">
+              <div class="pkg-price">
+                <span class="price-num">تواصل معنا</span>
+              </div>
+            </div>
+          </div>
+          <ul class="pkg-features">
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>إشراف كامل 24 ساعة / 7 أيام على كل المنصات</span>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>تحليل شامل للصفحة</span>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>تقارير دورية كل 15 يوم</span>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>التواصل مع المتابعين الجدد</span>
+            </li>
+            <li class="feature-item disabled">
+              <span class="feature-icon cross">✗</span>
+              <span>10 تصاميم شهرياً</span>
+            </li>
+            <li class="feature-item disabled">
+              <span class="feature-icon cross">✗</span>
+              <span>استراتيجية محتوى كاملة</span>
+            </li>
+          </ul>
+          <button class="pkg-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            ابدأ بالباقة دي
+          </button>
+        </div>
+
+        <!-- Package 2 - POPULAR -->
+        <div class="package-card popular" id="pkg2">
+          <div class="popular-badge">⭐ الأكثر طلباً</div>
+          <div class="pkg-header">
+            <div class="pkg-icon">💎</div>
+            <div class="pkg-name">باقة النمو</div>
+            <div class="pkg-tagline">أساس + تصاميم احترافية</div>
+            <div class="pkg-price-wrap">
+              <div class="pkg-price">
+                <span class="price-num">تواصل معنا</span>
+              </div>
+            </div>
+          </div>
+          <ul class="pkg-features">
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>إشراف كامل 24 ساعة / 7 أيام على كل المنصات</span>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>تحليل شامل للصفحة</span>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>تقارير دورية كل 15 يوم</span>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>التواصل مع المتابعين الجدد</span>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>10 تصاميم شهرياً بجودة عالية</span>
+            </li>
+            <li class="feature-item disabled">
+              <span class="feature-icon cross">✗</span>
+              <span>استراتيجية محتوى كاملة</span>
+            </li>
+          </ul>
+          <button class="pkg-btn popular-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            ابدأ بالباقة دي
+          </button>
+        </div>
+
+        <!-- Package 3 -->
+        <div class="package-card premium" id="pkg3">
+          <div class="premium-badge">👑 الأشمل</div>
+          <div class="pkg-header">
+            <div class="pkg-icon">🌟</div>
+            <div class="pkg-name">باقة التميز</div>
+            <div class="pkg-tagline">الحل الكامل للنمو الحقيقي</div>
+            <div class="pkg-price-wrap">
+              <div class="pkg-price">
+                <span class="price-num">تواصل معنا</span>
+              </div>
+            </div>
+          </div>
+          <ul class="pkg-features">
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>إشراف كامل 24 ساعة / 7 أيام على كل المنصات</span>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>تحليل شامل للصفحة</span>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>تقارير دورية كل 15 يوم</span>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>التواصل مع المتابعين الجدد</span>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>10 تصاميم شهرياً بجودة عالية</span>
+            </li>
+            <li class="feature-item">
+              <span class="feature-icon check">✓</span>
+              <span>استراتيجية محتوى كاملة ومخصصة</span>
+            </li>
+          </ul>
+          <button class="pkg-btn premium-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            ابدأ بالباقة دي
+          </button>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ===== WHY US SECTION ===== -->
+  <section class="why-us" id="why-us">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">ليه احنا</div>
+        <h2 class="section-title">مزايا <span class="gradient-text">تنافسية حقيقية</span></h2>
+        <p class="section-subtitle">مش مجرد كلام — دي الأسباب الحقيقية اللي بتخلي عملاؤنا مش بيسيبونا</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-number">01</div>
+          <h3>أسعار أقل من السوق</h3>
+          <p>نقدم نفس جودة الوكالات الكبيرة بأسعار أصغر بكثير. ليه تدفع أكتر وانت ممكن تاخد أحسن؟</p>
+        </div>
+        <div class="why-card">
+          <div class="why-number">02</div>
+          <h3>فريق 50+ متخصص</h3>
+          <p>مش شخص واحد بيعمل كل حاجة — عندنا فريق كامل كل واحد متخصص في مجاله.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-number">03</div>
+          <h3>نبدأ الكلام مع المتابعين</h3>
+          <p>فريقنا بيوصل لكل متابع جديد ويبدأ معاه محادثة — ميزة لا يقدمها أحد في السوق.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-number">04</div>
+          <h3>إشراف بلا انقطاع</h3>
+          <p>24 ساعة، 7 أيام، 365 يوم — صفحتك محمية ومتابعة في كل وقت، حتى في الأعياد.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-number">05</div>
+          <h3>تقارير شفافة كل 15 يوم</h3>
+          <p>بتعرف بالظبط إيه اللي عملناه وإيه النتائج — شفافية كاملة ومحاسبية على كل حاجة.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-number">06</div>
+          <h3>متخصصون في هدفك</h3>
+          <p>خبرة في قطاعات الملابس، المطاعم، والكافيهات — نفهم جمهورك أحسن منك.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TARGET CLIENTS ===== -->
+  <section class="clients" id="clients">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">من نخدم</div>
+        <h2 class="section-title">متخصصون في <span class="gradient-text">قطاعك</span></h2>
+        <p class="section-subtitle">خبرتنا مركّزة في القطاعات دي عشان نقدم لك أفضل نتيجة</p>
+      </div>
+      <div class="clients-grid">
+        <div class="client-type-card">
+          <div class="client-emoji">👗</div>
+          <h3>محلات الملابس</h3>
+          <p>نبرز منتجاتك بتصاميم تشعل اللهفة ونبني جمهور من المهتمين بالموضة والستايل</p>
+          <ul class="client-benefits">
+            <li>عرض المنتجات باحترافية</li>
+            <li>محتوى Reels جذاب</li>
+            <li>استهداف جمهور الموضة</li>
+          </ul>
+        </div>
+        <div class="client-type-card">
+          <div class="client-emoji">🍽️</div>
+          <h3>المطاعم</h3>
+          <p>نخلي أكلك يتكلم قبل ما الزبون يوصل — صور شهية ومحتوى يجيب الناس على بابك</p>
+          <ul class="client-benefits">
+            <li>فوتوغرافي للأكل</li>
+            <li>تغطية العروض والأوفر</li>
+            <li>ردود على التقييمات</li>
+          </ul>
+        </div>
+        <div class="client-type-card">
+          <div class="client-emoji">☕</div>
+          <h3>الكافيهات</h3>
+          <p>نبني للكافيه بتاعك مجتمع حقيقي من العشاق — محتوى Aesthetic وأجواء تجذب الناس</p>
+          <ul class="client-benefits">
+            <li>أجواء ومحتوى Cozy</li>
+            <li>تسليط الضوء على المشروبات</li>
+            <li>بناء مجتمع مخلص</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Case Studies / Partners -->
+      <div class="section-header" style="margin-top: 80px;">
+        <h2 class="section-title">شركاء <span class="gradient-text">نجاحنا</span></h2>
+        <p class="section-subtitle">بعض الجهات اللي وثقت فينا وعملنا معاها</p>
+      </div>
+      <div class="partners-grid">
+        <div class="partner-card">
+          <div class="partner-logo-text">Makaseb</div>
+          <div class="partner-sub">مكاسب | وكالة استشارات</div>
+        </div>
+        <div class="partner-card">
+          <div class="partner-logo-text">Fincart</div>
+          <div class="partner-sub">حلول الشحن والتمويل للتجارة</div>
+        </div>
+        <div class="partner-card">
+          <div class="partner-logo-text">عالم آبل</div>
+          <div class="partner-sub">أخبار ومنتجات آبل</div>
+        </div>
+        <div class="partner-card">
+          <div class="partner-logo-text">التقنية بلا حدود</div>
+          <div class="partner-sub">أخبار التقنية والذكاء الاصطناعي</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-it-works">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">كيف نعمل</div>
+        <h2 class="section-title">من الاتفاق للنتيجة <span class="gradient-text">في 4 خطوات</span></h2>
+      </div>
+      <div class="steps-container">
+        <div class="step-line"></div>
+        <div class="steps-grid">
+          <div class="step-item">
+            <div class="step-circle">1</div>
+            <h3>اجتماع مجاني</h3>
+            <p>بنتكلم معاك ونفهم احتياجاتك وأهدافك بالكامل</p>
+          </div>
+          <div class="step-item">
+            <div class="step-circle">2</div>
+            <h3>تحليل الوضع الحالي</h3>
+            <p>بنعمل تحليل عميق لصفحاتك الحالية ومنافسينك</p>
+          </div>
+          <div class="step-item">
+            <div class="step-circle">3</div>
+            <h3>خطة مخصصة</h3>
+            <p>بنصمم خطة عمل مخصصة ليك وبتبدأ التنفيذ فوراً</p>
+          </div>
+          <div class="step-item">
+            <div class="step-circle">4</div>
+            <h3>نتائج قابلة للقياس</h3>
+            <p>تقارير دورية وشفافية كاملة في كل خطوة</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== FAQ SECTION ===== -->
+  <section class="faq">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-tag">أسئلة شائعة</div>
+        <h2 class="section-title">عندك <span class="gradient-text">سؤال؟</span></h2>
+        <p class="section-subtitle">إجابات على أكتر الأسئلة اللي بتتسأل</p>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>إيه الفرق بينكم وبين غيركم في السوق؟</span>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            الفرق الأساسي في 3 حاجات: أسعارنا أقل بكثير من السوق، عندنا فريق أكبر من 50 متخصص مش فرد واحد، والأهم إننا بنبدأ الكلام مع المتابعين الجدد بنفسنا — ده بيحوّل المتابعين لعملاء حقيقيين.
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>امتى بشوف نتايج؟</span>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            معظم عملاؤنا بيشوفوا فرق واضح في أول 2-4 أسابيع — تفاعل أكتر، ردود أسرع، ومتابعين جدد أكثر نشاطاً. النتائج الكبيرة في المبيعات بتيجي بعد 2-3 شهور من العمل المتواصل.
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>هل بتشتغلوا على كل المنصات؟</span>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            آه، بنشتغل على Facebook, Instagram, TikTok, X (Twitter)، وأي منصة تانية بتستخدمها. الإشراف بيكون 24/7 على كل المنصات في نفس الوقت.
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>إيه اللي بيحصل لو عندي مشكلة أو شكوى؟</span>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            عندنا تيم دعم متاح 24/7 — بتتواصل معانا وبنرد في أقل من ساعة في أي وقت. كمان التقارير اللي بتيجيلك كل 15 يوم بتضمنلك شفافية كاملة على كل حاجة.
+          </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-question">
+            <span>هل ممكن أغير الباقة بعدين؟</span>
+            <div class="faq-icon">+</div>
+          </div>
+          <div class="faq-answer">
+            طبعاً! ممكن تبدأ بأي باقة وتترقّى لباقة أعلى في أي وقت. عندنا مرونة كاملة حسب احتياجاتك ونموك.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <div class="contact-glow"></div>
+    <div class="section-container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="section-tag">تواصل معنا</div>
+          <h2 class="section-title">جاهزين نبدأ <span class="gradient-text">معاك دلوقتي</span></h2>
+          <p class="section-subtitle">اتصل بينا وهنرد عليك في أقل من ساعة — بكل أسئلتك واستفساراتك</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">موقعنا</div>
+                <div class="contact-value">مصر، الإمارات، السعودية — نخدم عملاء في كل مكان</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">وقت الرد</div>
+                <div class="contact-value">أقل من ساعة — 24/7</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">تواصل معنا عبر الإيميل</div>
+                <div class="contact-value"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNrcmkbxQHKhsQcvjLDDkFlHQgDNnGFGQJtTQqBtsFjcQKJPxXSVNrwLrPQRzszgQJkVKg" target="_blank" rel="noopener" class="contact-link">minervamedia29@gmail.com</a></div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">رقم هاتف للتواصل</div>
+                <div class="contact-value"><a href="tel:01130700604" class="contact-link">01130700604</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm" onsubmit="submitForm(event)">
+            <h3 class="form-title">احجز استشارتك المجانية</h3>
+            <div class="form-group">
+              <label for="name">الاسم</label>
+              <input type="text" id="name" placeholder="اسمك هنا..." required />
+            </div>
+            <div class="form-group">
+              <label for="business">نوع النشاط التجاري</label>
+              <select id="business" required>
+                <option value="" disabled selected>اختار نوع نشاطك</option>
+                <option value="clothing">محل ملابس</option>
+                <option value="restaurant">مطعم</option>
+                <option value="cafe">كافيه</option>
+                <option value="other">غير ذلك</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="phone">رقم الواتساب</label>
+              <input type="tel" id="phone" placeholder="01xxxxxxxxx" required />
+            </div>
+            <div class="form-group">
+              <label for="package-select">الباقة المهتم بيها</label>
+              <select id="package-select">
+                <option value="" disabled selected>اختار الباقة</option>
+                <option value="pkg1">باقة الأساس</option>
+                <option value="pkg2">باقة النمو (الأكثر طلباً)</option>
+                <option value="pkg3">باقة التميز</option>
+                <option value="custom">مش متأكد — عايز نساعدني</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">أي تفاصيل إضافية (اختياري)</label>
+              <textarea id="message" placeholder="أي تفاصيل عن نشاطك أو أسئلة عندك..." rows="3"></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="submitBtn">
+              <span id="btnText">احجز استشارتك المجانية الآن</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+            </button>
+            <div class="form-success" id="formSuccess">
+              ✅ تم إرسال طلبك! هنتواصل معاك في أقل من ساعة.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon" style="width:40px;height:40px">
+              <svg viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="18" stroke="url(#footerGrad)" stroke-width="2.5"/>
+                <path d="M12 20 L20 12 L28 20 L20 28 Z" fill="url(#footerGrad)" opacity="0.8"/>
+                <circle cx="20" cy="20" r="4" fill="white"/>
+                <defs>
+                  <linearGradient id="footerGrad" x1="0" y1="0" x2="40" y2="40">
+                    <stop offset="0%" stop-color="#4F8EF7"/>
+                    <stop offset="100%" stop-color="#A855F7"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="logo-text" style="font-size:1.4rem">Minerva <span class="logo-accent">Media</span></span>
+          </div>
+          <p class="footer-desc">وكالة متخصصة في إدارة السوشيال ميديا — نبني حضورك الرقمي ونحوّل المتابعين لعملاء حقيقيين بأسعار أقل من السوق.</p>
+
+        </div>
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h4 class="footer-col-title">الخدمات</h4>
+            <ul>
+              <li><a href="#services">إشراف 24/7</a></li>
+              <li><a href="#services">تحليل الصفحة</a></li>
+              <li><a href="#services">تقارير دورية</a></li>
+              <li><a href="#services">تصاميم شهرية</a></li>
+              <li><a href="#services">استراتيجية محتوى</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">الباقات</h4>
+            <ul>
+              <li><a href="#packages">باقة الأساس</a></li>
+              <li><a href="#packages">باقة النمو ⭐</a></li>
+              <li><a href="#packages">باقة التميز 👑</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">التواصل</h4>
+            <ul>
+              <li><a href="#contact">احجز استشارة مجانية</a></li>
+              <li><a href="#contact">واتساب</a></li>
+              <li><a href="#faq">أسئلة شائعة</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Minerva Media. جميع الحقوق محفوظة.</p>
+        <p class="footer-tagline">🚀 نبني معك — مش بس بنشتغل ليك</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING BUTTONS ===== -->
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/201130700604?text=مرحبا، أنا مهتم بخدماتكم" id="whatsappFloat" class="whatsapp-float" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+    <span class="whatsapp-tooltip">تواصل معنا الآن</span>
+  </a>
+
+  <!-- Scroll To Top -->
+  <button id="scrollTop" class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="العودة للأعلى">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
